@@ -23,20 +23,20 @@
 	transform: translate(-50%, -50%);
 } 
 
-	.temple {
-		/* background-image: image-url("temple.jpg"); */
+.temple {
+	/* background-image: image-url("temple.jpg"); */
+	position: relative;
+	height: 500px;
+	background-color: black;
+	.templeHeader {
+		font-size: 52px;
+		color: white;
 		position: relative;
-		height: 500px;
-		background-color: black;
-		.templeHeader {
-			font-size: 52px;
-			color: white;
-			position: relative;
-			text-align: center;
-			@include center-both;
-		}
+		text-align: center;
+		@include center-both;
 	}
-	.treehouse {
-		background-image: image-url("treehouse.jpg");
-		height: 500px;
-	}
+}
+.treehouse {
+	background-image: image-url("treehouse.jpg");
+	height: 500px;
+}
