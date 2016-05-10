@@ -6,6 +6,7 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	position: relative;
 }
 
 @mixin horiz-center {
@@ -39,4 +40,71 @@
 .treehouse {
 	background-image: image-url("treehouse.jpg");
 	height: 500px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 14px arial;
+}
+
+.tekst {
+  font-size: 84px;
+  margin: 0px auto;
+  padding-top: 300px;
+  color: #FFF;
+  position: relative;
+  text-shadow: 0px 20px 60px rgba(0,0,0,0.6);
+}
+
+.header {
+  width: 100%;
+  height: 700px;
+  background: url(http://i.imgur.com/uQqHxxj.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.content {
+  width: 100%;
+  height: 1000px;
+  background: #F7F7F7;
+  padding: 20px;
+}
+
+.attTitle {
+	font-size: 36px;
+}
+
+.cultureTitle {
+	font-size: 44px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.cultureTextWrap {
+	height: 300px;
+	position: relative;
+}
+
+.cultureText {
+	font-size: 38px;
+	line-height: 53px;
+	@include vert-center;
+}
+
+.cultureImg {
+	background-image: image-url("maden.jpg");
+	background-size: cover;
+	height: 300px;
 }
